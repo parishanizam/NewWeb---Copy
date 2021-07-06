@@ -1,0 +1,338 @@
+/* --------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: rgba(204, 231, 209, 0.885);
+    color: #555;
+    font-family: 'Lato' , 'Arial' , sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+section {
+    padding: 80px 0; 
+}
+
+/* ---------HEADER------------- */
+
+h1 ,
+h2 , 
+h3{
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px; 
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 3px;
+    font-weight: 300;
+
+}
+
+h2 {
+    font-size: 180%; 
+    word-spacing: 2px; 
+    margin-bottom: 30px; 
+    text-align: center;
+    font-weight: 300;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #50bd57; 
+    content: " ";
+    width: 100px;
+    margin: 0 auto; 
+    margin-top: 30px; 
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #37b153; 
+    font-weight: 400;
+}
+
+/* ---------PARAGRAPHS------------ */
+.long-copy {
+    line-height: 145%; 
+    width: 70%; 
+    margin-left: 15%; 
+}
+
+.box p {
+    font-size: 95%;
+    line-height: 145%;
+
+}
+
+/* ---------ICONS------------ */
+
+
+/* ---------BUTTONS------------ */
+
+.btn:link,
+.btn:visited , 
+ input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px; 
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.3s, border 0.3s, color 0.3s; 
+    color: #fff;
+}
+
+.btn-full:link,
+.btn-full:visited ,  
+input[type=submit]{
+    background-color: #1c8034; 
+    background-color: #1c8034; 
+    border: 1px solid; 
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #1c8034;
+    margin-right: 15px; 
+}
+
+.btn:hover, 
+.btn:active, 
+input[type=submit] :hover,
+input[type=submit]:active {
+    background-color:  #178142
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #1c8034; 
+    border: 1px solid  #178142; 
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid  #178142;
+
+}
+
+/* --------------------------------------- */
+/* HEADER */
+/* --------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.405)),url(vegetables.png);
+    background-size: cover;
+    background-position: centre;
+    height: 100vh;
+    background-attachment: fixed; 
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 50%; 
+    transform: translate(-20%,20%); 
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left; 
+    margin-top: 20px;
+
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+.main-nav li { 
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.main-nav li a:link ,
+.main-nav li a:visited {
+    padding: 7px 0px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+}
+
+.main-nav li a:hover ,
+.main-nav li a:active {
+    border-bottom: 3px solid #1c8034; 
+}
+
+/*---------PICTURES-------*/
+
+.section-pictures {
+    padding: 0;
+
+}
+.picture-showcase {
+    list-style: none;
+    width: 100%;
+
+}
+
+.picture-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    height: auto;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(206, 253, 201);
+}
+.photo img {
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.4s, opacity 0.4s;
+
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    
+
+}
+
+/*--------EXTRA--------*/
+
+.section-extra { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.405)),url(pinkclouds.png);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed; 
+    padding: 80px 0; 
+    height: auto;
+
+}
+
+.section-extra li {
+    text-align: centre;
+    margin-left: 30%;  
+    font-size: 25px; 
+    line-height: 145%; 
+}
+
+/*---------PROGRAM---------*/
+.section-program {
+    background-color:  rgba(204, 231, 209, 0.885); 
+    background-size: cover; 
+    padding: 80px 0; 
+    height: auto;
+    width: auto;
+
+}
+.section-program li, 
+.section-program h3 , 
+.section-program img {
+    margin-left: 100px;
+}
+p {
+    text-align: center;
+}
+/*----------RANDOM--------*/
+.section-blank {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.405)),url(pinkclouds.png);
+    background-size: cover;
+    color:  rgba(182, 235, 191, 0.885);
+    background-attachment: fixed; 
+    padding: 80px 0; 
+    height: auto;
+} 
+
+
+/*------------------------*/
+/* FORM */
+/*------------------------*/
+
+.contact-form {
+    width: 60%; 
+    margin: 0 auto; 
+
+}
+
+input[type=text],
+select, 
+textarea {
+    width: 100%; 
+    padding: 7px;
+    border-radius: 3 px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 200px; 
+
+}
+*:focus {outline: none;}
+
+/*----------FOOTER-----------------*/
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.405)),url(pinkclouds.png);
+    height: auto;
+    width: auto;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+
+}
+
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+
+.footer-nav li, 
+.social-links li {
+    display: inline-block;
+    margin-right: 20px; 
+    color: #ccc;
+
+
+}
+
